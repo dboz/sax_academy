@@ -103,3 +103,11 @@ body{
     height: 200px;
     background-color: #000;
 }
+
+#map{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    
+}
