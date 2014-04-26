@@ -29,11 +29,11 @@ body{
 
 #button_list li{
     display: inline;
-    margin-left: 10px;
+    margin-left: 3px;
 }
 
 #button_list li button{
-    width: 120px;
+    width: 110px;
 }
 
 #wrapper{
@@ -42,6 +42,23 @@ body{
     min-height: 400px;
     margin: auto;
     background-color: #000;
+}
+
+#left_menu{
+    position: absolute;
+    left: -150px;
+    width: 150px;
+    min-height: 200px;
+    text-align: right;
+    background-color: #000;
+}
+
+#left_menu ul{
+    list-style-type: none;
+}
+
+#left_menu ul li{
+    margin-top: 5px;
 }
 
 #content{

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('#header').corner("corner tl tr 30px");
     $('#footer').corner("corner bl br 30px");
+    $('#left_menu').corner("corner tl bl 30px");
     $('#content').empty();
     make_homepage();
 
