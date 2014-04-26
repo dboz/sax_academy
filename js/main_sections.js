@@ -1,6 +1,5 @@
 function make_homepage() {
     $.getJSON('js/data.json', function(content) {
-        console.log('oookkkk');
         $('#content').empty();
         $('#content').append('<img src="img/sax_1.jpg" align="left" style="margin-right:10px;"/>');
         var homepage_content = $('<div style="text-align:justify"></div>');
@@ -8,7 +7,6 @@ function make_homepage() {
             homepage_content.append("<p>" + value + "</p>");
         });
         $('#content').append(homepage_content);
-        
     });
 }
 
@@ -52,9 +50,6 @@ function make_contatti() {
             .openPopup();
 }
 
-
-
-
 function make_adolphe_sax() {
     $.getJSON('js/data.json', function(content) {
         $('#content').empty();
@@ -86,6 +81,46 @@ function make_conservatori(){
     $.getJSON('js/data.json', function(content) {
         $('#content').empty();
         $.each(content['conservatori'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
+    });
+}
+
+function make_gli_interpreti(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $.each(content['gli_interpreti'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
+    });
+}
+
+function make_sax_timeline(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $.each(content['sax_timeline'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
+    });
+}
+
+function make_aziende(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $.each(content['aziende'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
+    });
+}
+
+function make_link(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $.each(content['link'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
 
         });

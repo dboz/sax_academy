@@ -20,6 +20,10 @@ var WorkspaceRouter = Backbone.Router.extend({
         "contatti": "contatti",
         "didattica": "didattica",
         "conservatori": "conservatori",
+        "gli_interpreti": "gli_interpreti",
+        "sax_timeline": "sax_timeline",
+        "aziende":"aziende",
+        "link": "link",
         "": "defaultRoute"
     },
     defaultRoute: function() {
@@ -44,6 +48,18 @@ var WorkspaceRouter = Backbone.Router.extend({
 
     },
     conservatori: function(){
+
+    },
+    gli_interpreti: function(){
+
+    },
+    sax_timeline: function(){
+
+    },
+    aziende: function(){
+
+    },
+    link: function(){
 
     }
 
@@ -126,6 +142,18 @@ var App = {
     },
     conservatori: function(){
         make_conservatori();
+    },
+    gli_interpreti: function(){
+        make_gli_interpreti();
+    },
+    sax_timeline: function(){
+        make_sax_timeline();
+    },
+    aziende: function(){
+        make_aziende();
+    },
+    link: function(){
+        make_link();
     }
 
 };
@@ -145,6 +173,10 @@ $(document).ready(function() {
     router.on("route:contatti", App.contatti);
     router.on("route:didattica", App.didattica);
     router.on("route:conservatori", App.conservatori);
+    router.on("route:gli_interpreti", App.gli_interpreti);
+    router.on("route:sax_timeline", App.sax_timeline);
+    router.on("route:aziende", App.aziende);
+    router.on("route:link", App.link);
     
 });
 
