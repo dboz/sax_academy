@@ -45,11 +45,11 @@ function make_contatti() {
             .openPopup();
 }
 
-function sax_stroy() {
+function make_adolphe_sax() {
     $.getJSON('js/data.json', function(content) {
         $('#content').empty();
         $('#content').append('<img src="img/adolphe_sax.jpg" align="left" style="margin-right:10px;" />');
-        $.each(content['sax_story'], function(index, value) {
+        $.each(content['adolphe_sax'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
 
         });
