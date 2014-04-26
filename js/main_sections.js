@@ -34,22 +34,42 @@ function make_finalita() {
 }
 
 function make_contatti() {
+    var content = "tel +39.066893321<br/>" +
+    "fax +39.0668130036<br/>" +
+    "mail: info@saxacademy.org <br/>" +
+    "M&deg; Giuseppina Levato, direttore artistico, gy@GiuseppinaLevato.it <br/>" +
+    "Dr. Massimo Criscuoli Tortora, segretario generale, mobile +39.392191610";
     $('#content').empty();
     $('#content').append('<div id="map"></div>');
-    var map = L.map('map').setView([41.916550, 12.471611], 16);
+    var map = L.map('map').setView([39, 12.471611], 16);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     L.marker([41.916550, 12.471611]).addTo(map)
-            .bindPopup('<span style="color:black;">Lungotevere delle Navi, 20<br/> 00196 - ROMA - Italia</span>')
+            .bindPopup('<span style="color:black;">' + content +'</span>')
             .openPopup();
 }
+
+
+
 
 function make_adolphe_sax() {
     $.getJSON('js/data.json', function(content) {
         $('#content').empty();
         $('#content').append('<img src="img/adolphe_sax.jpg" align="left" style="margin-right:10px;" />');
         $.each(content['adolphe_sax'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
+
+    });
+}
+
+function make_il_saxofono(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $('#content').append('<img src="img/sax_2.png" align="left" style="margin-right:10px;" />');
+        $.each(content['il_saxofono'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
 
         });

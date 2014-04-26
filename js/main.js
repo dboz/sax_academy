@@ -13,6 +13,7 @@ var WorkspaceRouter = Backbone.Router.extend({
         "chi_siamo": "chi_siamo",
         "finalita": "finalita",
         "adolphe_sax": "adolphe_sax",
+        "il_saxofono":"il_saxofono",
         "news": "news",
         "corsi": "corsi",
         "contatti": "contatti",
@@ -27,6 +28,8 @@ var WorkspaceRouter = Backbone.Router.extend({
     finalita: function() {
     },
     adolphe_sax: function() {
+    },
+    il_saxofono: function(){
     },
     news: function() {
     },
@@ -61,6 +64,9 @@ var App = {
     },
     adolphe_sax: function() {
         make_adolphe_sax();
+    },
+    il_saxofono: function(){
+        make_il_saxofono();
     },
     news: function() {
         $('#content').empty();
@@ -117,6 +123,7 @@ $(document).ready(function() {
     router.on("route:defaultRoute", App.defaultRoute);
     router.on("route:finalita", App.finalita);
     router.on("route:adolphe_sax", App.adolphe_sax);
+    router.on("route:il_saxofono", App.il_saxofono);
     router.on("route:news", App.news);
     router.on("route:corsi", App.corsi);
     router.on("route:contatti", App.contatti);
