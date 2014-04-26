@@ -18,6 +18,8 @@ var WorkspaceRouter = Backbone.Router.extend({
         "news": "news",
         "corsi": "corsi",
         "contatti": "contatti",
+        "didattica": "didattica",
+        "conservatori": "conservatori",
         "": "defaultRoute"
     },
     defaultRoute: function() {
@@ -37,6 +39,12 @@ var WorkspaceRouter = Backbone.Router.extend({
     corsi: function() {
     },
     contatti: function() {
+    },
+    didattica: function(){
+
+    },
+    conservatori: function(){
+
     }
 
 });
@@ -55,6 +63,7 @@ var App = {
     defaultRoute: function() {
     },
     homepage: function() {
+        console.log('homepage');
         make_homepage();
     },
     chi_siamo: function(){
@@ -90,7 +99,7 @@ var App = {
 
         var $item_1 = $('<div class="active item" style="text-align:center"></div>');
         $item_1.append('<img src="img/corso_1.jpg" />');
-        $item_1.append('<div class="carousel-caption"><h4>Corsi Estivi di Interpretazione - 7° Edizione - Torino 24-31 agosto 2014</h4></div>');
+        $item_1.append('<div class="carousel-caption"><h4>Corsi Estivi di Interpretazione - 7&deg; Edizione - Torino 24-31 agosto 2014</h4></div>');
 
         var $item_2 = $('<div class="item" style="text-align:center"></div>');
         $item_2.append('<img src="img/corso_2.jpg" />');
@@ -111,6 +120,12 @@ var App = {
     },
     contatti: function() {
         make_contatti();
+    },
+    didattica: function(){
+        make_didattica();
+    },
+    conservatori: function(){
+        make_conservatori();
     }
 
 };
@@ -128,6 +143,9 @@ $(document).ready(function() {
     router.on("route:news", App.news);
     router.on("route:corsi", App.corsi);
     router.on("route:contatti", App.contatti);
+    router.on("route:didattica", App.didattica);
+    router.on("route:conservatori", App.conservatori);
+    
 });
 
 

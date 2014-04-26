@@ -1,5 +1,6 @@
 function make_homepage() {
     $.getJSON('js/data.json', function(content) {
+        console.log('oookkkk');
         $('#content').empty();
         $('#content').append('<img src="img/sax_1.jpg" align="left" style="margin-right:10px;"/>');
         var homepage_content = $('<div style="text-align:justify"></div>');
@@ -7,6 +8,7 @@ function make_homepage() {
             homepage_content.append("<p>" + value + "</p>");
         });
         $('#content').append(homepage_content);
+        
     });
 }
 
@@ -73,6 +75,19 @@ function make_il_saxofono(){
             $('#content').append("<p>" + value + "</p>");
 
         });
+    });
+}
 
+function make_didattica(){
+        $('#content').empty();
+ }
+
+function make_conservatori(){
+    $.getJSON('js/data.json', function(content) {
+        $('#content').empty();
+        $.each(content['conservatori'], function(index, value) {
+            $('#content').append("<p>" + value + "</p>");
+
+        });
     });
 }

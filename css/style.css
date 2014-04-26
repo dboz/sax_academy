@@ -25,6 +25,14 @@ body{
     right: 20px;
     padding: 5px;
     top: 100px;
+    color:#ffcc66;
+}
+
+#logo-title-1{
+    color:#ffcc66;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size: 30px;
 }
 
 #button_list li{
@@ -81,6 +89,9 @@ body{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
+.btn-warning:hover{
+    background-color: #ffcc66;
+}
 
 #background_title{
     background-image: url('../img/background.png');
