@@ -79,7 +79,6 @@ var App = {
     defaultRoute: function() {
     },
     homepage: function() {
-        console.log('homepage');
         make_homepage();
     },
     chi_siamo: function(){

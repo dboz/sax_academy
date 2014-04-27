@@ -1,4 +1,4 @@
-parseResponse({
+{
     "homepage": [
         "La Sax Academy, con sede a Roma, è un’associazione culturale senza fine di lucro, presieduta dal M° Giuseppina Levato, coadiuvata dai consiglieri dr. Bruno Piattelli e dr. Massimo Criscuoli Tortora, con funzione anche di segretario generale. Sax Academy: competenza ed estro.",
         "Ha l’obiettivo di promuovere e stimolare la cultura della Musica e, in particolare, del Saxofono, l’ultimo affascinante strumento creato dal talento e dal genio dell’uomo, nella vasta gamma degli strumenti tradizionali.",
@@ -439,4 +439,8 @@ parseResponse({
         "- 4 febbraio: il Belgio conia due monete commemorative per il bicentenario della morte di Sax"
     ]
 
-});
+}
+
+
+
+
