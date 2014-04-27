@@ -76,6 +76,7 @@ body{
     /*overflow:scroll;*/
     overflow-x:hidden;
     overflow-y:scroll;
+    scrollbar-base-color:#000;
 }
 
 
