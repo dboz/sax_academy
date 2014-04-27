@@ -120,13 +120,13 @@
         "Marcel Mule: www.en.wikipedia.org/wiki/Marcel_Mule"
     ],
     "aziende": [
-        "Borgani: www.borgani.eu",
-        "Keilwerth: www.keilwert.com",
-        "Rampone e Cazzani: www.ramponecazzani.com",
-        "Selmer: www.selmer.fr",
-        "Vandoren: www.vandoren-en.com",
-        "Yamaha: www.yamaha.com",
-        "Yanagisawa: www.yanagisawa.co.jp"
+        "Borgani: <a href=\"www.borgani.eu\">www.borgani.eu</a>",
+        "Keilwerth: <a href=\"www.keilwert.com\">www.keilwert.com</a>",
+        "Rampone e Cazzani: <a href=\"www.ramponecazzani.com\">www.ramponecazzani.com</a>",
+        "Selmer: <a href=\"www.selmer.fr\">www.selmer.fr</a>",
+        "Vandoren: <a href=\"www.vandoren-en.com\">www.vandoren-en.com</a>",
+        "Yamaha: <a href=\"www.yamaha.com\">www.yamaha.com</a> ",
+        "Yanagisawa: <a href=\"www.yanagisawa.co.jp\">www.yanagisawa.co.jp</a>"
     ],
     "link": [
         "Giuseppina Levato: <a href=\"www.giuseppinalevato.it\" >www.giuseppinalevato.it</a> ",
