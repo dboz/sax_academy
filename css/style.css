@@ -73,7 +73,9 @@ body{
     padding-right: 50px;
     text-align: justify;
     font-size: 15px;
-    overflow:scroll;
+    /*overflow:scroll;*/
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 
