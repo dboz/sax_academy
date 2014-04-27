@@ -1,5 +1,5 @@
 function make_homepage() {
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $('#content').append('<img src="img/sax_1.jpg" align="left" style="margin-right:10px;"/>');
         var homepage_content = $('<div style="text-align:justify"></div>');
@@ -11,7 +11,7 @@ function make_homepage() {
 }
 
 function make_chi_siamo(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         //$('#content').append('<img src="img/sax_1.jpg" align="left" style="margin-right:10px;"/>');
         var chi_siamo_content = $('<div style="text-align:justify"></div>');
@@ -23,7 +23,7 @@ function make_chi_siamo(){
 }
 
 function make_finalita() {
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['finalita'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
@@ -51,7 +51,7 @@ function make_contatti() {
 }
 
 function make_adolphe_sax() {
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $('#content').append('<img src="img/adolphe_sax.jpg" align="left" style="margin-right:10px;" />');
         $.each(content['adolphe_sax'], function(index, value) {
@@ -63,7 +63,7 @@ function make_adolphe_sax() {
 }
 
 function make_il_saxofono(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $('#content').append('<img src="img/sax_2.png" align="left" style="margin-right:10px;" />');
         $.each(content['il_saxofono'], function(index, value) {
@@ -78,7 +78,7 @@ function make_didattica(){
  }
 
 function make_conservatori(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['conservatori'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
@@ -88,7 +88,7 @@ function make_conservatori(){
 }
 
 function make_gli_interpreti(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['gli_interpreti'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
@@ -98,7 +98,7 @@ function make_gli_interpreti(){
 }
 
 function make_sax_timeline(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['sax_timeline'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
@@ -108,7 +108,7 @@ function make_sax_timeline(){
 }
 
 function make_aziende(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['aziende'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");
@@ -118,7 +118,7 @@ function make_aziende(){
 }
 
 function make_link(){
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content['link'], function(index, value) {
             $('#content').append("<p>" + value + "</p>");

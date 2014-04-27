@@ -66,7 +66,7 @@ var WorkspaceRouter = Backbone.Router.extend({
 });
 
 var get_data = function(key) {
-    $.getJSON('js/data.json', function(content) {
+    $.getJSON('data.json', function(content) {
         $('#content').empty();
         $.each(content[key], function(index, value) {
             $('#content').append(value);
